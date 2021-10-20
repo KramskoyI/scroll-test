@@ -6,27 +6,30 @@ const fifth = document.getElementById('fifth');
 
 first. onclick = function(){
     const one = document.getElementById('one');
-    one.scrollIntoView( {block: "start", behavior: "smooth"});
+    one.scrollIntoView(true);
+    window.scrollBy(0, -60);
 };
 
 second. onclick = function(){
     const two = document.getElementById('two');
-    two.scrollIntoView( {block: "start", behavior: "smooth"});
+    two.scrollIntoView(true);
+    window.scrollBy(0, -60);
 };
 
 third. onclick = function(){
     const three = document.getElementById('three');
-    three.scrollIntoView( {block: "start", behavior: "smooth"});
+    three.scrollIntoView(true);
+    window.scrollBy(0, -60);
 };
 
 fourth. onclick = function(){
     const four = document.getElementById('four');
-    four.scrollIntoView( {block: "start", behavior: "smooth"});
+    four.scrollIntoView(true);
+    window.scrollBy(0, -60); 
 };
 
 fifth. onclick = function(){
     const five = document.getElementById('five');
     five.scrollIntoView( {block: "start", behavior: "smooth"});
-    
-    
+    window.scrollBy(0, -60); 
 };
