@@ -1,44 +1,18 @@
-const first = document.getElementById('first');
-const second = document.getElementById('second');
-const three = document.getElementById('three');
-const fourth = document.getElementById('fourth');
-const fifth = document.getElementById('fifth');
+const linkList = document.getElementById('linkList');
+const first = document.getElementById('first')
 
-first. onclick = function(){
-    const one = document.getElementById('one');
-    one.scrollIntoView(true);
-    window.scrollBy(0, -60);
-};
-
-second. onclick = function(){
-    const two = document.getElementById('two');
-    two.scrollIntoView(true);
-    window.scrollBy(0, -60);
-};
-
-third. onclick = function(){
-    const three = document.getElementById('three');
-    three.scrollIntoView(true);
-    window.scrollBy(0, -60);
-};
-
-fourth. onclick = function(){
-    const four = document.getElementById('four');
-    four.scrollIntoView(true);
-    window.scrollBy(0, -60); 
-};
-
-fifth. onclick = function(){
-    const five = document.getElementById('five');
-    five.scrollIntoView( {block: "start", behavior: "smooth"});
-    window.scrollBy(0, -60); 
-};
+linkList.addEventListener('click', function(){
+    let data = event.target.getAttribute('data-section');
+    let id = data;
+    let paragraph = document.getElementById(id);
+    paragraph.scrollIntoView( {block: "start", behavior: "smooth"});
+    
+});
 
 //button scrol up  
 function trackScroll() {
     let scrolled = window.pageYOffset;
     let coords = document.documentElement.clientHeight;
-  
     if (scrolled > coords) {
         goTopBtn.classList.add('back_to_top-show');
     }
@@ -46,10 +20,9 @@ function trackScroll() {
         goTopBtn.classList.remove('back_to_top-show');
     }
 }
-  
 function backToTop() {
     if (window.pageYOffset > 0) {
-        window.scrollBy(0, -80);
+        window.scrollBy(0, -60);
         setTimeout(backToTop, 0);
     }
 }

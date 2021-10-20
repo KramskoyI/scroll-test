@@ -18,6 +18,10 @@ ul {
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
+  
+}
+.mb60{
+  margin-bottom: -60px;
 }
 
 .row {
@@ -26,9 +30,12 @@ ul {
 .row.between {
   justify-content: space-between;
 }
-
+.pt60{
+  padding-top: 60px;
+}
 .header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   display: flex;
   justify-content: space-between;
