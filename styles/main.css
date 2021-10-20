@@ -111,5 +111,28 @@ ul {
 .scroll-top-btn:hover:before, .scroll-top-btn:hover:after {
   background-color: #1976d2;
 }
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #979696c4;
+  color: rgb(6, 80, 240);
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+.back_to_top:hover {
+  background: #0894da;
+}
+
+.back_to_top-show {
+  display: block;
+}
 
 /*# sourceMappingURL=main.css.map */
