@@ -1,7 +1,7 @@
 const linkList = document.getElementById('linkList');
 const scrollTop = 300;
-let goTopBtn = document.querySelector('.back_to_top');
-let one = document.getElementById('one');
+const goTopBtn = document.querySelector('.back_to_top');
+const one = document.getElementById('one');
 
 window.addEventListener('scroll', trackScroll);
 goTopBtn.addEventListener('click', backToTop);
@@ -11,7 +11,6 @@ linkList.addEventListener('click', function(event){
     paragraph.scrollIntoView( {block: "start", behavior: "smooth"});
 });
 
-//button scrol up  
 function trackScroll() {
     if (window.pageYOffset >= scrollTop) {
         goTopBtn.classList.add('back_to_top-show');
