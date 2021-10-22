@@ -15,8 +15,8 @@ function trackScroll() {
     if (window.pageYOffset >= scrollTop) {
         goTopBtn.classList.add('back_to_top-show');
     } else { goTopBtn.classList.remove('back_to_top-show');
-    }
-}
+    };
+};
  function backToTop() {
     one.scrollIntoView( {block: "start", behavior: "smooth"});
 };
